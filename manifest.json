@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "responsive_vk",
+  "version": "1.0",
+  "web_accessible_resources": [
+    "responsive_vk.css"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://vk.com/*"
+      ],
+      "css": [
+        "responsive_vk.css"
+      ],
+      "js": [
+        "responsive_vk.js"
+      ]
+    }
+  ]
+}
