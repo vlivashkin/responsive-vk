@@ -4,17 +4,26 @@
   width: 100% !important;
 }
 @media (max-width: 1199px) {
-  .body_im #page_header {
+  .body_im .scroll_fix {
     width: 100% !important;
+    overflow: hidden !important;
+  }
+  .body_im #page_header_wrap {
+    width: 100% !important;
+  }
+  .body_im .top_home_link {
+    width: 45px !important;
+  }
+  .body_im #ts_input {
+    width: 160px;
   }
   .body_im #page_body {
     width: 100% !important;
     float: none !important;
     margin-left: 20px !important;
   }
-  .body_im .scroll_fix {
-    width: 100% !important;
-    overflow: hidden !important;
+  .body_im .left_menu_nav_wrap {
+    display: none;
   }
   .body_im .im-page--dcontent {
     overflow: hidden !important;
@@ -23,23 +32,17 @@
     padding-right: 0 !important;
     margin-right: 10px !important;
   }
-  .body_im .left_menu_nav_wrap {
-    display: none;
-  }
 }
-@media (max-width: 767px) {
-  .body_im #page_layout {
-    width: 100% !important;
-  }
-  .body_im .top_home_link {
-    width: 39px !important;
-  }
+@media (max-width: 991px) {
   .body_im #im--page:not(.im-page_classic) .im-page--dialogs {
     width: 200px !important;
   }
   .body_im #im--page:not(.im-page_classic) .im-page--history {
     margin-left: 200px !important;
-    width: calc(100% - 242px) !important;
+    width: calc(100% - 245px) !important;
+  }
+  .body_im #im_dialogs_search {
+    padding-right: 80px;
   }
   .body_im .im-page--header-inner {
     overflow: hidden;
@@ -55,37 +58,27 @@
   .body_im .im-chat-input--textarea {
     width: calc(100% - 28px) !important;
   }
+}
+@media (max-width: 767px) {
+  .body_im #page_header {
+    width: calc(100% - 25px) !important;
+    overflow: hidden !important;
+  }
+  .body_im #page_layout {
+    width: 100% !important;
+  }
   .body_im #chat_onl_wrap {
     display: none !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .body_im #page_header,
   .body_im #page_layout {
     width: 750px !important;
   }
-  .body_im .top_home_link {
-    width: 39px !important;
-  }
-  .body_im #im--page:not(.im-page_classic) .im-page--dialogs {
-    width: 200px !important;
-  }
-  .body_im #im--page:not(.im-page_classic) .im-page--history {
-    margin-left: 200px !important;
-    width: calc(100% - 242px) !important;
-  }
-  .body_im .im-chat-input .im_grid,
-  .body_im .im-chat-input .nim-peer {
-    display: none !important;
-  }
-  .body_im .im-chat-input {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-  .body_im .im-chat-input--textarea {
-    width: calc(100% - 28px) !important;
-  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  .body_im #page_header,
   .body_im #page_layout {
     width: 960px !important;
   }

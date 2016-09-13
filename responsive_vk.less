@@ -6,8 +6,21 @@
   }
 
   @media (max-width: 1199px) {
-    #page_header {
+    .scroll_fix {
       width: 100% !important;
+      overflow: hidden !important;
+    }
+
+    #page_header_wrap {
+      width: 100% !important;
+    }
+
+    .top_home_link {
+      width: 45px !important;
+    }
+
+    #ts_input {
+      width: 160px;
     }
 
     #page_body {
@@ -16,9 +29,8 @@
       margin-left: 20px !important;
     }
 
-    .scroll_fix {
-      width: 100% !important;
-      overflow: hidden !important;
+    .left_menu_nav_wrap {
+      display: none;
     }
 
     .im-page--dcontent {
@@ -29,21 +41,9 @@
       padding-right: 0 !important;
       margin-right: 10px !important;
     }
-
-    .left_menu_nav_wrap {
-      display: none;
-    }
   }
 
-  @media (max-width: 767px) {
-    #page_layout {
-      width: 100% !important;
-    }
-
-    .top_home_link {
-      width: 39px !important;
-    }
-
+  @media (max-width: 991px) {
     #im--page:not(.im-page_classic) {
       .im-page--dialogs {
         width: 200px !important;
@@ -51,8 +51,12 @@
 
       .im-page--history {
         margin-left: 200px !important;
-        width: ~"calc(100% - 242px)" !important;
+        width: ~"calc(100% - 245px)" !important;
       }
+    }
+
+    #im_dialogs_search {
+      padding-right: 80px;
     }
 
     .im-page--header-inner {
@@ -72,6 +76,17 @@
     .im-chat-input--textarea {
       width: ~"calc(100% - 28px)" !important;
     }
+  }
+
+  @media (max-width: 767px) {
+    #page_header {
+      width: ~"calc(100% - 25px)" !important;
+      overflow: hidden !important;
+    }
+
+    #page_layout {
+      width: 100% !important;
+    }
 
     #chat_onl_wrap {
       display: none !important;
@@ -79,41 +94,14 @@
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
+    #page_header,
     #page_layout {
       width: 750px !important;
-    }
-
-    .top_home_link {
-      width: 39px !important;
-    }
-
-    #im--page:not(.im-page_classic) {
-      .im-page--dialogs {
-        width: 200px !important;
-      }
-
-      .im-page--history {
-        margin-left: 200px !important;
-        width: ~"calc(100% - 242px)" !important;
-      }
-    }
-
-    .im-chat-input .im_grid,
-    .im-chat-input .nim-peer {
-      display: none !important;
-    }
-
-    .im-chat-input {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
-
-    .im-chat-input--textarea {
-      width: ~"calc(100% - 28px)" !important;
     }
   }
 
   @media (min-width: 992px) and (max-width: 1199px) {
+    #page_header,
     #page_layout {
       width: 960px !important;
     }
