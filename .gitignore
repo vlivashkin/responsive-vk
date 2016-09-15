@@ -1,3 +1,5 @@
+/release/**
+
 # JetBrains
 .idea/
 *.iml
